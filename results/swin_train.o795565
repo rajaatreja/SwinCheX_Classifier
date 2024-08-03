@@ -1,0 +1,172 @@
+### Starting TaskPrologue of job 795565 on tg096 at Thu 04 Apr 2024 09:49:22 AM CEST
+Running on cores 0-31 with governor ondemand
+Thu Apr  4 09:49:22 2024       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.54.15              Driver Version: 550.54.15      CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  |   00000000:01:00.0 Off |                    0 |
+| N/A   35C    P0             52W /  400W |       0MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+Images exatracted.
+Available GPU count:1
+Epoch 1/250
+----------
+train Loss: 0.1617
+val Loss: 0.1502
+saving
+
+Epoch 2/250
+----------
+train Loss: 0.1489
+val Loss: 0.1495
+saving
+
+Epoch 3/250
+----------
+train Loss: 0.1449
+val Loss: 0.1462
+saving
+
+Epoch 4/250
+----------
+train Loss: 0.1414
+val Loss: 0.1442
+saving
+
+Epoch 5/250
+----------
+train Loss: 0.1383
+val Loss: 0.1449
+
+Epoch 6/250
+----------
+train Loss: 0.1351
+val Loss: 0.1440
+saving
+
+Epoch 7/250
+----------
+train Loss: 0.1316
+val Loss: 0.1482
+
+Epoch 8/250
+----------
+train Loss: 0.1275
+val Loss: 0.1466
+
+Epoch 9/250
+----------
+train Loss: 0.1226
+val Loss: 0.1525
+
+Early stopping triggered after 9 epochs.
+Training complete in 192m 31s
+Best val Loss: 0.1440
+0 images processed.
+320 images processed.
+640 images processed.
+960 images processed.
+1280 images processed.
+1600 images processed.
+1920 images processed.
+2240 images processed.
+2560 images processed.
+2880 images processed.
+3200 images processed.
+3520 images processed.
+3840 images processed.
+4160 images processed.
+4480 images processed.
+4800 images processed.
+5120 images processed.
+5440 images processed.
+5760 images processed.
+6080 images processed.
+6400 images processed.
+6720 images processed.
+7040 images processed.
+7360 images processed.
+7680 images processed.
+8000 images processed.
+8320 images processed.
+8640 images processed.
+8960 images processed.
+9280 images processed.
+9600 images processed.
+9920 images processed.
+10240 images processed.
+10560 images processed.
+10880 images processed.
+11200 images processed.
+11520 images processed.
+11840 images processed.
+12160 images processed.
+12480 images processed.
+12800 images processed.
+13120 images processed.
+13440 images processed.
+13760 images processed.
+14080 images processed.
+14400 images processed.
+14720 images processed.
+15040 images processed.
+15360 images processed.
+15680 images processed.
+16000 images processed.
+16320 images processed.
+16640 images processed.
+16960 images processed.
+17280 images processed.
+17600 images processed.
+17920 images processed.
+18240 images processed.
+18560 images processed.
+18880 images processed.
+19200 images processed.
+19520 images processed.
+19840 images processed.
+20160 images processed.
+20480 images processed.
+20800 images processed.
+21120 images processed.
+21440 images processed.
+21760 images processed.
+22080 images processed.
+22400 images processed.
+=== JOB_STATISTICS ===
+=== current date     : Thu 04 Apr 2024 01:12:59 PM CEST
+= Job-ID             : 795565 on tinygpu
+= Job-Name           : swin_train
+= Job-Command        : /home/hpc/iwi5/iwi5156h/swin.sh
+= Initial workdir    : /home/hpc/iwi5/iwi5156h
+= Queue/Partition    : a100
+= Slurm account      : iwi5 with QOS=normal
+= Requested resources:  for 1-00:00:00
+= Elapsed runtime    : 03:23:40
+= Total RAM usage    : 2.0 GiB of requested  GiB (%)   
+= Node list          : tg096
+= Subm/Elig/Start/End: 2024-04-04T09:49:18 / 2024-04-04T09:49:18 / 2024-04-04T09:49:19 / 2024-04-04T13:12:59
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           45.4G   104.9G   209.7G        N/A      53K     500K   1,000K        N/A    
+    /home/vault          0.0K  1048.6G  2097.2G        N/A       1      200K     400K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A100-SXM4-40GB, 00000000:01:00.0, 2100726, 97 %, 23 %, 15574 MiB, 11805319 ms
